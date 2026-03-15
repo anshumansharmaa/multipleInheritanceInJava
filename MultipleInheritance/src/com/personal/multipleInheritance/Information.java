@@ -1,13 +1,14 @@
-package com.personal.multipleInheritance;
+package com.personal.multipleinheritance;
 
-public class Information implements Human, Animals {
-	public void speak() {
-		System.out.println("Humans speak!!");
-	}
+public class LivingBeing implements Human, Animal {
 
-	public void sound() {
-		System.out.println("Animals make sound!!");
+    @Override
+    public void speak() {
+        System.out.println("Humans communicate using speech.");
+    }
 
-	}
-
+    @Override
+    public void makeSound() {
+        System.out.println("Animals produce various sounds.");
+    }
 }
